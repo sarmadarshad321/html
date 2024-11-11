@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Periodic Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 95%;
+        }
+
+        td {
+            padding: 15px;
+            font-size: 16px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            width: 50px;
+            height: 50px;
+        }
+
+        .alkali { background-color: #ff6347; color: white; }
+        .alkaline { background-color: #ffcc00; }
+        .transition { background-color: #1e90ff; color: white; }
+        .post-transition { background-color: #00ff7f; }
+        .metalloid { background-color: #ffa500; }
+        .non-metal { background-color: #f08080; }
+        .halogen { background-color: #adff2f; }
+        .noble-gas { background-color: #9370db; color: white; }
+        .lanthanide { background-color: #ffb6c1; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); font-weight: bold; }
+        .actinide { background-color: #fa8072; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); font-weight: bold; }
+
+        td:hover {
+            background-color: #d3d3d3;
+            transform: scale(1.05);
+            z-index: 1;
+        }
+
+        .spacer {
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Periodic Table</h1>
+
+<table>
+    <tr>
+        <td class="non-metal">1<br>H</td>
+        <td colspan="16" class="spacer"></td>
+        <td class="noble-gas">2<br>He</td>
+    </tr>
+    <tr>
+        <td class="alkali">3<br>Li</td>
+        <td class="alkaline">4<br>Be</td>
+        <td colspan="10" class="spacer"></td>
+        <td class="metalloid">5<br>B</td>
+        <td class="non-metal">6<br>C</td>
+        <td class="non-metal">7<br>N</td>
+        <td class="non-metal">8<br>O</td>
+        <td class="halogen">9<br>F</td>
+        <td class="noble-gas">10<br>Ne</td>
+    </tr>
+    <tr>
+        <td class="alkali">11<br>Na</td>
+        <td class="alkaline">12<br>Mg</td>
+        <td colspan="10" class="spacer"></td>
+        <td class="post-transition">13<br>Al</td>
+        <td class="metalloid">14<br>Si</td>
+        <td class="non-metal">15<br>P</td>
+        <td class="non-metal">16<br>S</td>
+        <td class="halogen">17<br>Cl</td>
+        <td class="noble-gas">18<br>Ar</td>
+    </tr>
+    <tr>
+        <td class="alkali">19<br>K</td>
+        <td class="alkaline">20<br>Ca</td>
+        <td class="transition">21<br>Sc</td>
+        <td class="transition">22<br>Ti</td>
+        <td class="transition">23<br>V</td>
+        <td class="transition">24<br>Cr</td>
+        <td class="transition">25<br>Mn</td>
+        <td class="transition">26<br>Fe</td>
+        <td class="transition">27<br>Co</td>
+        <td class="transition">28<br>Ni</td>
+        <td class="transition">29<br>Cu</td>
+        <td class="transition">30<br>Zn</td>
+        <td class="post-transition">31<br>Ga</td>
+        <td class="metalloid">32<br>Ge</td>
+        <td class="metalloid">33<br>As</td>
+        <td class="non-metal">34<br>Se</td>
+        <td class="halogen">35<br>Br</td>
+        <td class="noble-gas">36<br>Kr</td>
+    </tr>
+    <tr>
+        <td class="alkali">37<br>Rb</td>
+        <td class="alkaline">38<br>Sr</td>
+        <td class="transition">39<br>Y</td>
+        <td class="transition">40<br>Zr</td>
+        <td class="transition">41<br>Nb</td>
+        <td class="transition">42<br>Mo</td>
+        <td class="transition">43<br>Tc</td>
+        <td class="transition">44<br>Ru</td>
+        <td class="transition">45<br>Rh</td>
+        <td class="transition">46<br>Pd</td>
+        <td class="transition">47<br>Ag</td>
+        <td class="transition">48<br>Cd</td>
+        <td class="post-transition">49<br>In</td>
+        <td class="post-transition">50<br>Sn</td>
+        <td class="metalloid">51<br>Sb</td>
+        <td class="non-metal">52<br>Te</td>
+        <td class="halogen">53<br>I</td>
+        <td class="noble-gas">54<br>Xe</td>
+    </tr>
+    <tr>
+        <td colspan="18" class="spacer"></td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td class="lanthanide">57<br>La</td>
+        <td class="lanthanide">58<br>Ce</td>
+        <td class="lanthanide">59<br>Pr</td>
+        <td class="lanthanide">60<br>Nd</td>
+        <td class="lanthanide">61<br>Pm</td>
+        <td class="lanthanide">62<br>Sm</td>
+        <td class="lanthanide">63<br>Eu</td>
+        <td class="lanthanide">64<br>Gd</td>
+        <td class="lanthanide">65<br>Tb</td>
+        <td class="lanthanide">66<br>Dy</td>
+        <td class="lanthanide">67<br>Ho</td>
+        <td class="lanthanide">68<br>Er</td>
+        <td class="lanthanide">69<br>Tm</td>
+        <td class="lanthanide">70<br>Yb</td>
+        <td class="lanthanide">71<br>Lu</td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td class="actinide">89<br>Ac</td>
+        <td class="actinide">90<br>Th</td>
+        <td class="actinide">91<br>Pa</td>
+        <td class="actinide">92<br>U</td>
+        <td class="actinide">93<br>Np</td>
+        <td class="actinide">94<br>Pu</td>
+        <td class="actinide">95<br>Am</td>
+        <td class="actinide">96<br>Cm</td>
+        <td class="actinide">97<br>Bk</td>
+        <td class="actinide">98<br>Cf</td>
+        <td class="actinide">99<br>Es</td>
+        <td class="actinide">100<br>Fm</td>
+        <td class="actinide">101<br>Md</td>
+        <td class="actinide">102<br>No</td>
+        <td class="actinide">103<br>Lr</td>
+    </tr>
+</table>
+
+</body>
+</html>
